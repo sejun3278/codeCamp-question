@@ -72,52 +72,69 @@ function gradeDebugFn(value) {
     let debug = `<div id='gradeDebugWrapper'> function grade(score) {`;
 
     // 100점 초과, 0점 미만
-    if(value > 100 || value < 0) {
-        debug += `<div class='black left'>`
-    } else {
-        debug += `<div>`
-    }
-    debug += `if (score > 100 || score < 0) { <br />　　console.log('잘못된 점수입니다.') </div>`
+    debug += `<div class=${value > 100 || value < 0 ? 'aaa' : null}> if (score > 100 || score < 0) { <br />　　console.log('잘못된 점수입니다.') </div>`
 
     // 90 ~ 100 점 사이
-    if(value >= 90 && value <= 100) {
-        debug += `<div class='black left'> } `
-    } else {
-        debug += `<div> } `
-    }
-    debug += ` else if (score >= 90 && score <= 100) { <br />　　console.log("A") </div>` 
+    debug += `<div class=${value >= 90 && value <= 100 ? "aaa" : null}> } else if (score >= 90 && score <= 100) { <br />　　console.log("A") </div>`
 
     // 80점 ~ 89점 사이
-    if(value >= 80 && value <= 89) {
-        debug += `<div class='black left'> } `
-    } else {
-        debug += `<div> } `
-    }
-    debug += ` else if (score >= 80 && score <= 89) { <br />　　console.log("B") </div>` 
+    debug += `<div class=${value >= 80 && value <= 89 ? "aaa" : null}> } else if (score >= 80 && score <= 89) { <br />　　console.log("B") </div>`
 
     // 70점 ~ 79점 사이
-    if(value >= 70 && value <= 79) {
-        debug += `<div class='black left'> } `
-    } else {
-        debug += `<div> } `
-    }
-    debug += ` else if (score >= 70 && score <= 79) { <br />　　console.log("C") </div>` 
+    debug += `<div class=${value >= 70 && value <= 79 ? "aaa" : null}> } else if (score >= 70 && score <= 79) { <br />　　console.log("C") </div>`
 
     // 60점 ~ 69점 사이
-    if(value >= 60 && value <= 69) {
-        debug += `<div class='black left'> } `
-    } else {
-        debug += `<div> } `
-    }
-    debug += ` else if (score >= 60 && score <= 69) { <br />　　console.log("D") </div>` 
+    debug += `<div class=${value >= 60 && value <= 69 ? "aaa" : null}> } else if (score >= 60 && score <= 69) { <br />　　console.log("D") </div>`
 
     // 59점 이하
-    if(value <= 59 && value >= 0) {
-        debug += `<div class='black left'> } `
-    } else {
-        debug += `<div> } `
-    }
-    debug += ` else if (score <= 59) { <br />　　console.log("F") <br /> } </div>` 
+    debug += `<div class=${value <= 59 && value >= 0 ? "aaa" : null}> } else if (score <= 59) { <br />　　console.log("F") <br /> } </div>`
+
+    // if(value > 100 || value < 0) {
+    //     debug += `<div class='black left'>`
+    // } else {
+    //     debug += `<div>`
+    // }
+    // debug += `if (score > 100 || score < 0) { <br />　　console.log('잘못된 점수입니다.') </div>`
+
+    // 90 ~ 100 점 사이
+    // if(value >= 90 && value <= 100) {
+    //     debug += `<div class='black left'> } `
+    // } else {
+    //     debug += `<div> } `
+    // }
+    // debug += ` else if (score >= 90 && score <= 100) { <br />　　console.log("A") </div>` 
+
+    // 80점 ~ 89점 사이
+    // if(value >= 80 && value <= 89) {
+    //     debug += `<div class='black left'> } `
+    // } else {
+    //     debug += `<div> } `
+    // }
+    // debug += ` else if (score >= 80 && score <= 89) { <br />　　console.log("B") </div>` 
+
+    // // 70점 ~ 79점 사이
+    // if(value >= 70 && value <= 79) {
+    //     debug += `<div class='black left'> } `
+    // } else {
+    //     debug += `<div> } `
+    // }
+    // debug += ` else if (score >= 70 && score <= 79) { <br />　　console.log("C") </div>` 
+
+    // 60점 ~ 69점 사이
+    // if(value >= 60 && value <= 69) {
+    //     debug += `<div class='black left'> } `
+    // } else {
+    //     debug += `<div> } `
+    // }
+    // debug += ` else if (score >= 60 && score <= 69) { <br />　　console.log("D") </div>` 
+
+    // 59점 이하
+    // if(value <= 59 && value >= 0) {
+    //     debug += `<div class='black left'> } `
+    // } else {
+    //     debug += `<div> } `
+    // }
+    // debug += ` else if (score <= 59) { <br />　　console.log("F") <br /> } </div>` 
 
 
     debug += `} </div>`;

@@ -130,6 +130,12 @@ html, body {
     font-weight: bold;
 }
 
+.aaa {
+    color : #DF5E5E !important;
+    font-weight: bold;
+    margin-left: 20px !important;
+}
+
 #gradeDebugWrapper div {
     padding-left: 30px;   
     margin: 20px 0px;
@@ -165,7 +171,7 @@ html, body {
 
 .selectIdx {
     font-weight: bold;
-    color : #FFD600;
+    color : #FED049;
 }
 
 #pageFlex {
@@ -195,7 +201,7 @@ html, body {
 
 .yellow {
     font-weight: bold;
-    color : #FFD600;
+    color : #FED049;
 }
 
 .yellow div {
