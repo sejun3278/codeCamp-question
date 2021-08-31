@@ -1,29 +1,24 @@
-
-
-#array_info_wrapper {
+#loof_info_wrapper {
     display : flex;
     flex-direction: column;
 }
 
-#array_example_wrapper {
+#loof_example_wrapper {
     display : flex;
     align-items: center;
     justify-content: space-around;
     height : 325px;
+    align-items: baseline;
 }
 
-.array_form {
-    font-size: 100px;
-    font-weight: 900;
-}
-
-#array_example_data {
+#loof_example_data {
     display : flex;
-    align-items: center;
-    width : 80%;
+    align-items: left;
+    width : 60%;
     font-size: 40px;
     justify-content: space-evenly;
-    margin-top : 20px;
+    margin-top : 75px;
+    flex-direction: column;
 }
 
 .blue {
@@ -34,7 +29,7 @@
     color : #B42B51;
 }
 
-#array_example_ment {
+#loof_example_ment {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +44,7 @@
     color : #AE00FB;
 }
 
-.array_example {
+.loof_example {
     padding : 0px 20px;
     color : #AE00FB;
     font-weight: 900;
@@ -63,4 +58,14 @@
 
 #length_size {
     color : #AE00FB;
+}
+
+#loof_result_img {
+    position: absolute;
+    right: 10px;
+    margin-top: 80px;
+}
+
+.bold {
+    font-weight: 900;
 }
